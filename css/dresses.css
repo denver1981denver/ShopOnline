@@ -1,0 +1,24 @@
+.dresses {
+  grid-area: dresses;
+  width: 245px;
+  /* height: 516px; */
+  /* margin-top: 24px;
+  height: 516px; */
+  /* align-self: end; */
+  background-image: url("../img/dresses.jpg");
+}
+
+
+.dresses__link {
+  display: flex;
+  padding-right: 20px;
+  padding-bottom: 20px;
+}
+
+.dresses__discount {
+  margin-top: auto;
+  margin-left: auto;
+}
+
+
+

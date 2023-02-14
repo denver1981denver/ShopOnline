@@ -1,0 +1,39 @@
+.logo {
+  max-width: 190px;
+  height: 41px;
+  align-self: center;
+}
+
+.logo__img {
+  height: 41px;
+}
+
+@media (max-width: 1400px) {
+  .logo {
+    align-self: end;
+    grid-area: logo;
+  }
+}
+
+@media (max-width: 850px) {
+  .logo {
+    width: 165px;
+    height: 35px;
+    align-self: center;
+  }
+
+  .logo__img {
+    height: 35px;
+  }
+}
+
+@media (max-width: 520px) {
+  .logo {
+    width: 114px;
+    height: 25px;
+  }
+  
+  .logo__img {
+    height: 25px;
+  }
+}

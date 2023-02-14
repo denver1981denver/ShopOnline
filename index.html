@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ShopOnline</title>
+
+  <link rel="preload" href="fonts/lato-bold.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="fonts/lato-regular.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="fonts/lato-heavy.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="fonts/open-sans-bold.woff2" as="font" type="font/woff2" crossorigin>
+
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+ <!-- <header class="header">
+    <h1 class="visually-hidden">Интернет магазин Shop Online</h1>
+    <div class="container">
+      <nav class="header__navigation">
+        <a href="/" class="logo">
+          <img class="logo__img" src="img/logo.svg" height="41" alt="Логотип интернет магазина ShopOnline">
+        </a>
+
+        <button class="menu-btn" type="button">Меню</button>
+
+        <form class="form">
+          <input class="form__input" type="search" placeholder="Я ищу...">
+
+          <button class="form__btn">
+            <img class="form__btn-image" src="img/search.svg" alt="изображение лупы">
+          </button>
+        </form>
+
+        <ul class="navbar">
+          <li class="navbar__item">
+            <a class="navbar__link" href="#" >
+              <img class="navbar__img navbar__img--profile" src="img/profile.svg" width="24" height="24" alt="фигура человека">
+              <p class="navbar__description">Профиль</p>
+            </a>
+          </li>
+
+          <li class="navbar__item">
+            <a class="navbar__link" href="#" >
+              <img class="navbar__img navbar__img--cart" src="img/cart.svg" width="30" height="30" alt="корзина для продуктов">
+              <p class="navbar__description">Корзина</p>
+              <span class="navbar__cart-count">2</span>
+            </a>
+          </li>
+
+          <li class="navbar__item">
+            <a href="#" class="navbar__link">
+              <img class="navbar__img navbar__img--favorites" src="img/favorites.svg" width="30" height="28" alt="сердце">
+              <p class="navbar__description">Избранное</p>
+            </a>
+          </li>
+        </ul>
+      </nav>
+    </div>
+  </header>  -->
+
+
+  <section class="ad-block">
+    <h2 class="visually-hidden">Рекламный блок</h2>
+    <div class="container">
+      <ul class="card">
+        <li class="card__item banner">
+          <a class="card__link banner__link" href="#"> 
+             <h3 class="banner__title">-50% на все ноутбуки</h3>
+
+             <h3 class="banner__subtitle">До конца акции:</h3>
+
+             <ul class="banner__timer timer">
+              <li class="timer__item">
+                <p class="timer__unit">3</p>
+                <p class="timer__unit-description">дня</p>
+              </li>
+
+              <li class="timer__item">
+                <p class="timer__unit">8</p>
+                <p class="timer__unit-description">часов</p>
+              </li>
+
+              <li class="timer__item">
+                <p class="timer__unit">43</p>
+                <p class="timer__unit-description">минуты</p>
+              </li>
+             </ul>
+          </a>  
+       </li>
+        
+        <li class="card__item book">
+           <a class="card__link book__link" href="#"> 
+              <h3 class="book__title"><span class="book__text">Книга – </span>лучший подарок</h3>
+           </a>  
+        </li>
+
+        <li class="card__item discount-time">
+          <a class="card__link discount-time__link" href="#">
+            <h3 class="discount-time__title"> Время скидок!</h3>
+            <p class="discount-time__discount card__discount">-25%</p>
+          </a> 
+        </li> 
+
+        <li class="card__item second-pair">
+          <a class="card__link second-pair__link" href="#">
+              <h3 class="second-pair__title"> Вторая пара кроссовок <span class="second-pair__text">в подарок!</span></h3>
+          </a> 
+        </li>
+
+        <li class="card__item new-year-gifts">
+          <a class="card__link new-year-gifts__link" href="#">
+            <h3 class="new-year-gifts__title"> Идеи новогодних подарков</h3>
+          </a> 
+        </li>
+
+        <li class="card__item sneakers">
+          <a class="card__link sneakers__link" href="#">
+            <h3 class="visually-hidden">Кроссовки</h3>
+            <p class="sneakers__discount card__discount">-40%</p>
+           </a>  
+        </li>
+
+        <li class="card__item beneficial-december">
+           <a class="card__link beneficial-december__link" href="#"> 
+            <h3 class="beneficial-december__title">Выгодно в декабре!</h3>
+            <p class="beneficial-december__discount card__discount">-15%</p>
+          </a>  
+        </li>
+
+        <li class="card__item new-year-decoration">
+           <a class="card__link new-year-decoration__link" href="#"> 
+            <h3 class="new-year-decoration__title">Новогодние украшения</h3>
+           </a>  
+        </li>
+
+        <li class="card__item dresses">
+           <a class="card__link dresses__link" href="#"> 
+            <h3 class="visually-hidden">Платья</h3>
+            <p class="dresses__discount card__discount">-55%</p>
+           </a>  
+        </li>
+
+        <li class="card__item household-chemicals">
+           <a class="card__link household-chemicals__link" href="#"> 
+            <h3 class="household-chemicals__title">На бытовую химию</h3>
+            <p class="household-chemicals__discount card__discount">-25%</p>
+           </a>  
+        </li>
+
+        <li class="card__item christmas-decorations">
+           <a class="card__link christmas-decorations__link" href="#"> 
+            <h3 class="visually-hidden">Ёлочные игрушки</h3>
+           </a>  
+        </li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- <section class="ad-block">
+    <h2 class="visually-hidden">Рекламный блок</h2>
+    <div class="container">
+      <ul class="card">
+         
+        <li class="card__item book">
+        
+        </li>
+
+        <li class="card__item discount-time">
+          <a class="card__link discount-time__link" href="#">
+            <h3 class="discount-time__title"> Время скидок!</h3>
+            <p class="discount-time__discount card__discount">-25%</p>
+          </a> 
+        </li> 
+
+        <li class="card__item second-pair">
+        
+        </li>
+
+        <li class="card__item new-year-gifts">
+          <a class="card__link new-year-gifts__link" href="#">
+            <h3 class="new-year-gifts__title"> Идеи новогодних подарков</h3>
+          </a> 
+        </li>
+
+        <li class="card__item sneakers">
+         
+        </li>
+
+        <li class="card__item beneficial-december">
+          <a class="card__link beneficial-december__link" href="#"> 
+            <h3 class="beneficial-december__title">Выгодно в декабре!</h3>
+            <p class="beneficial-december__discount card__discount">-15%</p>
+          </a>  
+        </li>
+
+        <li class="card__item new-year-decoration">
+          <a class="card__link new-year-decoration__link" href="#"> 
+            <h3 class="new-year-decoration__title">Новогодние украшения</h3>
+           </a>  
+        </li>
+
+        <li class="card__item dresses">
+          
+        </li>
+
+        <li class="card__item household-chemicals">
+          
+        </li>
+
+        <li class="card__item christmas-decorations">
+           
+        </li>
+      </ul>
+    </div>
+  </section> -->
+
+ 
+</body>
+</html>

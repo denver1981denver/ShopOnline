@@ -1,0 +1,9 @@
+.christmas-decorations {
+  grid-area: christmas-decor ;
+ 
+  /* max-width: 245px; */
+   height: 245px; 
+   align-self: end;
+   background-image: url("../img/christmas-decorations.jpg");
+}
+

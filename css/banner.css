@@ -1,0 +1,46 @@
+.banner {
+  grid-area: banner;
+  background-image: url("../img/banner.jpg");
+}
+
+.banner__link {
+  padding-top: 145px;
+  display: flex;
+  flex-direction: column;
+}
+
+.banner__title {
+  margin-bottom: 100px;
+  padding-left: 112px;
+  font-size: 70px;
+  line-height: 1.3;
+}
+
+.banner__subtitle {
+  margin: 0 auto 5px;
+  font-size: 16px;
+  line-height: 1.3;
+}
+
+.banner__timer {
+  margin: 0 auto;
+  display: flex;
+  gap: 30px;
+}
+
+.timer__item {
+  display: flex;
+  gap: 6px;
+  align-items: center;
+}
+
+.timer__unit {
+  font-size: 60px;
+  line-height: 1.3;
+}
+
+.timer__unit-description {
+  padding-top: 15px;
+  font-size: 32px;
+  line-height: 1.3;
+}

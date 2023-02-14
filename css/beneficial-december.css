@@ -1,0 +1,23 @@
+.beneficial-december {
+  grid-area: december;
+  max-width: 550px;
+  justify-self: end;
+  /* height: 228px; */
+  background-image: url("../img/beneficial-december.jpg");
+ 
+}
+
+.beneficial-december__link {
+  padding: 120px 0 20px 30px;
+}
+.beneficial-december__title {
+  margin-right: 39px;
+  display: inline-block;
+  font-size: 40px;
+line-height: 130%;
+}
+
+.beneficial-december__discount {
+display: inline-block;
+}
+

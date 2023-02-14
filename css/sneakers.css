@@ -1,0 +1,31 @@
+.sneakers {
+  grid-area: sneakers;
+    max-width: 550px;
+  max-height: 228px;  
+  background-image: url("../img/sneakers.jpg");
+   align-self: start; 
+}
+
+.sneakers__link {
+  padding-top: 20px;
+  padding-left: 20px;
+}
+
+
+
+@media (max-width:1024px) {
+  .sneakers {
+    width: 464px;
+    height: 220px;
+    background-image: url("../img/sneakers-medium.jpg");
+    /* align-self: end; */
+  }
+  
+  .sneakers__link {
+    padding-top: 17px;
+    padding-left: 10px;
+  }
+}
+
+
+
