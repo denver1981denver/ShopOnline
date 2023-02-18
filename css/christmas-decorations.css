@@ -1,9 +1,21 @@
 .christmas-decorations {
-  grid-area: christmas-decor ;
- 
-  /* max-width: 245px; */
-   height: 245px; 
-   align-self: end;
-   background-image: url("../img/christmas-decorations.jpg");
+  grid-area: christmas-decor;
+  height: 245px;
+  align-self: end;
+  background-image: url("../img/christmas-decorations.jpg");
 }
 
+@media (max-width: 1460px) {
+  .christmas-decorations {
+    background-position: 60%;
+  }
+}
+
+@media (max-width: 1028px) {
+  .christmas-decorations {
+    max-width: 196px;
+    background-image: url("../img/christmas-decorations-medium.jpg");
+    height: 196px;
+    justify-self: end;
+  }
+}

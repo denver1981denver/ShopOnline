@@ -1,38 +1,38 @@
 .new-year-decoration {
   grid-area: ny-decor;
-  /* max-width: 1160px; */
-  /* height: 516px; */
   background-image: url("../img/new-year-decoration.jpg");
-  /* margin-top: 24px;
-  height: 516px; */
-  /* align-self: end; */
 }
 
 .new-year-decoration__link {
-  padding: 358px 467px 50px 50px;
+  display: flex;
+  padding-left: 50px;
+  padding-bottom: 50px;
 }
 
 .new-year-decoration__title {
-  max-height: 108px;
-  padding-top: 30px;
-  /* padding: 30px 43px 30px 43px; */
-  background: #FFFFFF;
-border-radius: 20px;
-font-size: 40px;
-line-height: 120%;
-text-align: center;
-text-transform: uppercase;
-color: #F91155;
+  margin-top: auto;
+  padding: 30px 43px 30px 43px;
+  font-size: 40px;
+  line-height: 120%;
+  text-align: center;
+  text-transform: uppercase;
+  background-color: #fff;
+  color: #f91155;
+  border-radius: 20px;
 }
 
-
-
-/* @media (max-width:1024px) {
+@media (max-width: 1596px) {
   .new-year-decoration {
-    width: 940px;
-    height: 418px;
+    background-position: 55%;
   }
-} */
+}
 
-
-
+@media (max-width: 1028px) {
+  .new-year-decoration {
+    max-width: 940px;
+    max-height: 418px;
+    background-image: url("../img/new-year-decoration-medium.jpg");
+    align-self: end;
+    justify-self: center;
+  }
+}

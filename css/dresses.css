@@ -1,13 +1,7 @@
 .dresses {
   grid-area: dresses;
-  width: 245px;
-  /* height: 516px; */
-  /* margin-top: 24px;
-  height: 516px; */
-  /* align-self: end; */
   background-image: url("../img/dresses.jpg");
 }
-
 
 .dresses__link {
   display: flex;
@@ -19,6 +13,22 @@
   margin-top: auto;
   margin-left: auto;
 }
+
+@media (max-width: 1028px) {
+  .dresses  {
+ max-width: 206px; 
+ height: 100%;
+    background-image: url("../img/dresses-medium.jpg");
+    justify-self: end;
+  }
+
+  .dresses__link {
+    
+    padding-right: 23px;
+    padding-bottom: 10px;
+  }
+}
+
 
 
 

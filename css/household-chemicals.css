@@ -1,14 +1,7 @@
-
-
 .household-chemicals {
-  
-  /* margin-bottom: -11px; */
   grid-area: chemicals;
-  max-width: 245px;
   height: 245px;
-  align-self: start;
- 
- background-image: url("../img/household-chemicals.jpg");
+  background-image: url("../img/household-chemicals.jpg");
 }
 
 .household-chemicals__link {
@@ -19,16 +12,34 @@
 }
 
 .household-chemicals__title {
-
   font-size: 30px;
-line-height: 130%;
+  line-height: 130%;
 }
 
 .household-chemicals__discount {
   order: -1;
 }
 
-.ad-block__discount {
+@media (max-width: 1028px) {
+  .household-chemicals {
+    max-width: 196px;
+    height: 196px;
+    background-image: url("../img/household-chemicals-medium.jpg");
+  
+    justify-self: end;
+  }
 
+  .household-chemicals__link {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 10px 0 19px 6px;
+  }
+  
+  .household-chemicals__title {
+    font-size: 20px;
+   
+  }
+  
+ 
 }
-

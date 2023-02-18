@@ -1,6 +1,5 @@
 .book {
   grid-area: book;
-  max-width: 245px;
   height: 245px;
   background-image: url("../img/book.jpg");
 }
@@ -21,29 +20,26 @@
   line-height: 1.3;
 }
 
-
-
-
-@media (max-width:1024px) {
+@media (max-width:1028px) {
   .book {
+ 
     max-width: 202px;
-    height: 202px;
+    /* height: 202px; */
+    height: 100%;
     background-image: url("../img/book-medium.jpg");
+   
+    
   }
 
   .book__link {
-    padding: 101px 3px 32px 9px;
+    padding: 101px 0 0 9px;
   }
   
   .book__title {
-    
     font-size: 24px;
-   
   }
   
   .book__text {
-   
     font-size: 30px;
-   
   }
 }

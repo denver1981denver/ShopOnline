@@ -1,9 +1,6 @@
 .sneakers {
   grid-area: sneakers;
-    max-width: 550px;
-  max-height: 228px;  
   background-image: url("../img/sneakers.jpg");
-   align-self: start; 
 }
 
 .sneakers__link {
@@ -11,14 +8,19 @@
   padding-left: 20px;
 }
 
-
-
-@media (max-width:1024px) {
+@media (max-width:1460px) {
   .sneakers {
-    width: 464px;
+ background-position: 40%;
+}
+}
+
+@media (max-width:1028px) {
+  .sneakers {
+    /* width: 100%; */
     height: 220px;
+    /* width: 464px; */
     background-image: url("../img/sneakers-medium.jpg");
-    /* align-self: end; */
+    align-self: end;
   }
   
   .sneakers__link {
