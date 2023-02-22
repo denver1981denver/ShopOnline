@@ -29,12 +29,10 @@
 
 @media (max-width: 1028px) {
   .discount-time {
- 
     max-width: 202px;
     height: 100%; 
     background-image: url("../img/discount-time-medium.jpg");
     justify-self: end;
-    
   }
 
   .discount-time__link {
@@ -45,6 +43,49 @@
     font-size: 24px;
   }
   .discount-time__discount {
-    /* margin-left: auto; */
+   
+  }
+}
+
+@media (max-width: 764px) {
+  .discount-time {
+
+  max-width: 130px;
+    height: 100%; 
+    background-image: url("../img/discount-time-small.jpg");
+    
+    
+  }
+
+  .discount-time__link {
+    padding: 15px 10px 10px 5px;
+  }
+
+  .discount-time__title {
+    font-size: 16px;
+  }
+  .discount-time__discount {
+    
+  }
+}
+
+@media (max-width: 340px) {
+  .discount-time {
+    max-width: 202px;
+    height: 100%; 
+    background-image: url("../img/discount-time-mobile.jpg");
+    justify-self: end;
+  }
+
+  .discount-time__link {
+    padding: 15px 10px 10px 0;
+  }
+
+  .discount-time__title {
+    font-size: 12px;
+  }
+
+  .discount-time__discount {
+    
   }
 }

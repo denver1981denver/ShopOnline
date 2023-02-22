@@ -22,17 +22,14 @@
 
 @media (max-width:1028px) {
   .book {
- 
     max-width: 202px;
     /* height: 202px; */
     height: 100%;
     background-image: url("../img/book-medium.jpg");
-   
-    
   }
 
   .book__link {
-    padding: 101px 0 0 9px;
+    padding: 76px 0 0 9px;
   }
   
   .book__title {
@@ -41,5 +38,45 @@
   
   .book__text {
     font-size: 30px;
+  }
+}
+
+@media (max-width: 764px) {
+  .book {
+    max-width: 130px;
+    background-image: url("../img/book-small.jpg");
+  }
+
+  .book__link {
+    padding: 43px 0 0 10px;
+  }
+  
+  .book__title {
+    font-size: 20px;
+    line-height: 1.1;
+  }
+  
+  .book__text {
+    font-size: 26px;
+    line-height: 1.1;
+  }
+}
+
+@media (max-width:340px) {
+  .book {
+  
+    background-image: url("../img/book-mobile.jpg");
+  }
+
+  .book__link {
+    padding: 101px 0 0 10px;
+  }
+  
+  .book__title {
+    font-size: 12px;
+  }
+  
+  .book__text {
+    font-size: 16px;
   }
 }

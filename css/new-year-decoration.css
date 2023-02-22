@@ -32,7 +32,17 @@
     max-width: 940px;
     max-height: 418px;
     background-image: url("../img/new-year-decoration-medium.jpg");
-    align-self: end;
-    justify-self: center;
+    place-self: end center;
+  }
+
+  .new-year-decoration__link {
+    padding-left: 30px;
+    padding-bottom: 39px;
+  }
+
+  .new-year-decoration__title {
+    padding: 22px 46px 23px 47px;
+    font-size: 30px;
+    border-radius: 16px;
   }
 }

@@ -25,7 +25,6 @@
     max-width: 196px;
     height: 196px;
     background-image: url("../img/household-chemicals-medium.jpg");
-  
     justify-self: end;
   }
 
@@ -38,8 +37,5 @@
   
   .household-chemicals__title {
     font-size: 20px;
-   
   }
-  
- 
 }

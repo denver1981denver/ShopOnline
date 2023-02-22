@@ -18,7 +18,18 @@
 
 @media (max-width: 1028px) {
   .beneficial-december {
-  
+    
     background-image: url("../img/beneficial-december-medium.jpg");
   }
+
+  .beneficial-december__link {
+  padding: 0 10px 10px 30px;
+  gap: 10px;
+}
+
+  .beneficial-december__title {
+    padding-bottom: 24px;
+  font-size: 30px;
+
+}
 }

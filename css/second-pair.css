@@ -3,7 +3,6 @@
   max-width: 516px;
   justify-self: end;
   background-image: url("../img/second-pair.jpg");
-  
 }
 
 .second-pair__link {
@@ -36,19 +35,46 @@
     background-image: url("../img/second-pair-medium.jpg");
   }
 
-  .second-pair__link {
-    /* padding-bottom: 20px; */
-  }
 
   .second-pair__title {
-    
+    width: 406px;
     min-height: 143px;
     padding: 24px 27px 32px 25px;
     font-size: 30px; 
   }
 
   .second-pair__text {
-     margin-top: 10px;
+    margin-top: 0;
     font-size: 40px; 
   }
+}
+
+  @media (max-width: 764px) {
+    .second-pair {
+     max-width: 380px;
+     max-height: 380px;
+      background-image: url("../img/second-pair-small.jpg");
+    }
+
+    .second-pair__link {
+      
+      padding: 0 10px 10px;
+    }
+  
+  
+    .second-pair__title {
+      /* width: 406px; */
+      min-height: 61px;
+      padding: 12px 30px 20px 26px;
+      font-size: 16px;
+      line-height: 1.1; 
+    }
+  
+    .second-pair__text {
+      display: inline;
+      font-size: 26px; 
+      line-height: 1.1; 
+    }
+
+  
 }
