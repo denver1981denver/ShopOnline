@@ -87,7 +87,6 @@
   }
 
   .card__item {
-    
     border-radius: 12px;
   }
 
@@ -96,8 +95,6 @@
     max-height: 50px;
     padding: 13px 5px 16px 7px;
     font-size: 16px;
-   
-   
   }
 
 }

@@ -30,7 +30,6 @@
 
 @media (max-width: 1028px) {
   .second-pair {
-    /* height: 446px; */
     max-width: 446px;
     background-image: url("../img/second-pair-medium.jpg");
   }
@@ -57,13 +56,12 @@
     }
 
     .second-pair__link {
-      
       padding: 0 10px 10px;
     }
   
   
     .second-pair__title {
-      /* width: 406px; */
+  
       min-height: 61px;
       padding: 12px 30px 20px 26px;
       font-size: 16px;
