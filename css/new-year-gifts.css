@@ -5,8 +5,9 @@
 
 .new-year-gifts__link {
   display: flex;
-  padding: 0 180px 30px 30px;
+  padding: 0 30px 30px 30px;
 }
+
 .new-year-gifts__title {
   margin-top: auto;
   font-size: 40px;
@@ -20,7 +21,7 @@
   }
 
   .new-year-gifts__link {
-    margin-bottom: 37px;
+    padding-bottom: 37px;
   }
 
   .new-year-gifts__title {
@@ -29,18 +30,34 @@
   }
 }
 
-@media (max-width: 762px) {
+@media (max-width: 764px) {
   .new-year-gifts {
-  
+   width: 100%;
     background-image: url("../img/new-year-gifts-small.jpg");
   }
 
   .new-year-gifts__link {
-    margin-bottom: 37px;
+    padding: 0 75px 18px 21px;
   }
 
   .new-year-gifts__title {
     font-size: 16px;
     line-height: 1.2;
+  }
+}
+
+@media (max-width: 400px) {
+  .new-year-gifts {
+    width: 100%;
+    background-image: url("../img/new-year-gifts-mobile.jpg");
+  }
+
+  .new-year-gifts__link {
+    padding: 0 10px 16px 10px;
+  }
+
+  .new-year-gifts__title {
+    font-size: 12px;
+    
   }
 }

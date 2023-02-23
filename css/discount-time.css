@@ -51,9 +51,10 @@
   .discount-time {
 
   max-width: 130px;
+  
     height: 100%; 
     background-image: url("../img/discount-time-small.jpg");
-    
+ 
     
   }
 
@@ -69,20 +70,22 @@
   }
 }
 
-@media (max-width: 340px) {
+@media (max-width: 400px) {
   .discount-time {
-    max-width: 202px;
-    height: 100%; 
+    
+    width: 100%;
     background-image: url("../img/discount-time-mobile.jpg");
-    justify-self: end;
+   
   }
 
   .discount-time__link {
-    padding: 15px 10px 10px 0;
+    padding: 28px 5px 5px 10px;
   }
 
   .discount-time__title {
+
     font-size: 12px;
+    text-align: left;
   }
 
   .discount-time__discount {

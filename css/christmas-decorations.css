@@ -19,3 +19,31 @@
     justify-self: end;
   }
 }
+
+@media (max-width: 764px) {
+  .christmas-decorations {
+    width: 100%;
+    max-height: 83px;
+    background-image: url("../img/christmas-decorations-small.jpg");
+    transform: translate(-30px,0);
+   
+  }
+}
+@media (max-width: 750px) {
+  .christmas-decorations{
+    min-width: 78px;
+    transform: translate(0,0);
+  }
+
+}
+
+@media (max-width: 400px) {
+  .christmas-decorations {
+    width: 100%;
+    min-height: 130px;
+    background-image: url("../img/christmas-decorations-mobile.jpg");
+    
+   
+  }
+}
+

@@ -44,7 +44,9 @@
 @media (max-width: 764px) {
   .book {
     max-width: 130px;
+  
     background-image: url("../img/book-small.jpg");
+    
   }
 
   .book__link {
@@ -62,14 +64,14 @@
   }
 }
 
-@media (max-width:340px) {
+@media (max-width: 400px) {
   .book {
-  
+    width: 100%;
     background-image: url("../img/book-mobile.jpg");
   }
 
   .book__link {
-    padding: 101px 0 0 10px;
+    padding: 76px 55px 10px 10px;
   }
   
   .book__title {

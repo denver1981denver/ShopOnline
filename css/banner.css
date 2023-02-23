@@ -43,7 +43,6 @@
   padding-top: 15px;
   font-size: 32px;
   line-height: 1.3;
-  
 }
 
 @media (max-width: 1596px) {
@@ -54,15 +53,15 @@
 
 @media (max-width: 1028px) {
   .banner {
-    /* height: 314px; */
-    background-image: url("../img/banner-medium.jpg");
     align-self: end;
+    background-image: url("../img/banner-medium.jpg");
     border-radius: 16px;
   }
 
   .banner__link {
     padding-top: 80px;
   }
+
   .banner__title {
     margin-bottom: 63px;
     padding-left: 80px;
@@ -80,22 +79,21 @@
   .banner__timer {
     gap: 20px;
   }
-  
+
   .timer__item {
     gap: 5px;
   }
-  
+
   .timer__unit-description {
     font-size: 20px;
   }
 }
 
 @media (max-width: 764px) {
-  
-.banner {
-  max-width: 700px;
+  .banner {
+    max-height: 280px;
+    align-self: start;
     background-image: url("../img/banner-small.jpg");
-    
   }
 
   .banner__link {
@@ -108,7 +106,6 @@
   }
 
   .banner__subtitle {
-    
     font-size: 12px;
   }
 
@@ -119,20 +116,19 @@
   .banner__timer {
     gap: 10px;
   }
-  
+
   .timer__item {
     gap: 3px;
   }
-  
+
   .timer__unit-description {
     font-size: 16px;
   }
 }
 
-@media (max-width: 340px) {
-  
-.banner {
-    /* height: 314px; */
+@media (max-width: 400px) {
+  .banner {
+    max-height: 380px;
     background-image: url("../img/banner-mobile.jpg");
   }
 
@@ -142,11 +138,12 @@
 
   .banner__title {
     margin-bottom: 189px;
+    padding-left: 29px;
     font-size: 22px;
   }
 
   .banner__subtitle {
-    
+    margin-bottom: 6px;
     font-size: 8px;
   }
 
@@ -157,16 +154,13 @@
   .banner__timer {
     gap: 8px;
   }
-  
+
   .timer__item {
-    gap: 22px;
+    gap: 2px;
   }
-  
+
   .timer__unit-description {
+    padding-top: 3px;
     font-size: 12px;
   }
 }
-
-
-
-

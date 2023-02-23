@@ -10,6 +10,7 @@
   padding: 0 20px 20px 30px;
   gap: 20px;
 }
+
 .beneficial-december__title {
   padding-bottom: 20px;
   font-size: 40px;
@@ -18,18 +19,51 @@
 
 @media (max-width: 1028px) {
   .beneficial-december {
-    
     background-image: url("../img/beneficial-december-medium.jpg");
   }
 
   .beneficial-december__link {
-  padding: 0 10px 10px 30px;
-  gap: 10px;
-}
+    padding: 0 10px 10px 30px;
+    gap: 10px;
+  }
 
   .beneficial-december__title {
     padding-bottom: 24px;
-  font-size: 30px;
-
+    font-size: 30px;
+  }
 }
+
+@media (max-width: 764px) {
+  .beneficial-december {
+    width: 100%;
+    background-image: url("../img/beneficial-december-small.jpg");
+  }
+
+  .beneficial-december__link {
+    padding-left: 21px;
+    gap: 10px;
+  }
+
+  .beneficial-december__title {
+    padding-bottom: 10px;
+    font-size: 16px;
+    line-height: 1.2;
+  }
+}
+
+@media (max-width: 400px) {
+  .beneficial-december {
+    width: 100%;
+    background-image: url("../img/beneficial-december-mobile.jpg");
+  }
+
+  .beneficial-december__link {
+    padding: 0 5px 5px 10px;
+    gap: 10px;
+  }
+
+  .beneficial-december__title {
+    padding-bottom: 10px;
+    font-size: 12px;
+  }
 }

@@ -53,6 +53,7 @@
      max-width: 380px;
      max-height: 380px;
       background-image: url("../img/second-pair-small.jpg");
+      justify-self: start;
     }
 
     .second-pair__link {
@@ -66,6 +67,7 @@
       padding: 12px 30px 20px 26px;
       font-size: 16px;
       line-height: 1.1; 
+      border-radius: 12px;
     }
   
     .second-pair__text {
@@ -76,3 +78,30 @@
 
   
 }
+
+@media (max-width: 400px) {
+  .second-pair {
+ 
+    background-image: url("../img/second-pair-mobile.jpg");
+  
+  }
+
+
+  .second-pair__title {
+    width: 100%;
+    min-height: 36px;
+    padding: 7px 25px 11px;
+    font-size: 12px;
+    border-radius: 8px;
+   
+  }
+
+  .second-pair__text {
+  
+    font-size: 16px; 
+   
+  }
+
+
+}
+

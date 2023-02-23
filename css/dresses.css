@@ -23,11 +23,52 @@
   }
 
   .dresses__link {
-    
     padding-right: 23px;
     padding-bottom: 10px;
   }
 }
+
+@media (max-width: 764px) {
+  .dresses  {
+max-width: 253px;
+ height: 171px;
+    background-image: url("../img/dresses-small.jpg");
+    justify-self: unset;
+    align-self: end;
+  }
+
+  .dresses__link {
+    
+    padding-right: 10px;
+  padding-bottom: 10px;
+  }
+}
+
+@media (max-width: 680px) {
+  .dresses  {
+width: 90%;
+background-position: -30px 0;
+  }
+
+  
+}
+
+@media (max-width: 550px) {
+  .dresses  {
+width: 85%;
+background-position: -50px 0;
+  }
+}
+
+@media (max-width: 400px) {
+  .dresses  {
+width: 100%;
+ height: 100%;
+    background-image: url("../img/dresses-mobile.jpg");
+    background-position: 0 0;
+  }
+}
+
 
 
 

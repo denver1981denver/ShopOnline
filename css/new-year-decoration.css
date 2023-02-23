@@ -46,3 +46,41 @@
     border-radius: 16px;
   }
 }
+
+@media (max-width: 764px) {
+  .new-year-decoration {
+    height: 100%;
+    background-image: url("../img/new-year-decoration-small.jpg");
+   justify-self: unset;
+  }
+
+  .new-year-decoration__link {
+    padding-left: 26px;
+    padding-bottom: 26px;
+  }
+
+  .new-year-decoration__title {
+    padding: 22px 33px 22px 34px;
+    font-size: 20px;
+    border-radius: 12px;
+  }
+}
+
+@media (max-width: 400px) {
+  .new-year-decoration {
+    width: 100%;
+    background-image: url("../img/new-year-decoration-mobile.jpg");
+
+  }
+
+  .new-year-decoration__link {
+    padding-left: 15px;
+    padding-bottom: 10px;
+  }
+
+  .new-year-decoration__title {
+    padding: 9px 41px 8px;
+    font-size: 12px;
+    border-radius: 6px;
+  }
+}
