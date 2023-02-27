@@ -73,15 +73,6 @@
     height: 100%;
   }
 
-  .form__input {
-    padding: 9px 0 11px 16px;
-    font-size: 8px;
-  }
-
-  .form__input::placeholder {
-    font-size: 8px;
-  }
-
   .form__btn {
     width: 50px;
     padding: 5px 15px;
@@ -89,5 +80,16 @@
 
   .form__btn-image {
     width: 15px;
+  }
+}
+
+@media (max-width: 320px) {
+  .form__input {
+    padding: 9px 0 11px 16px;
+    font-size: 8px;
+  }
+
+  .form__input::placeholder {
+    font-size: 8px;
   }
 }
