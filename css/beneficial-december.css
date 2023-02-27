@@ -51,9 +51,10 @@
   }
 }
 
-@media (max-width: 400px) {
+@media (max-width: 500px) {
   .beneficial-december {
-    width: 100%;
+     max-width: 280px;
+    justify-self: center;
     background-image: url("../img/beneficial-december-mobile.jpg");
   }
 

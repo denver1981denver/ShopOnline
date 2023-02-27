@@ -13,7 +13,7 @@
   margin-top: auto;
   padding: 30px 43px 30px 43px;
   font-size: 40px;
-  line-height: 120%;
+  line-height: 1.2;
   text-align: center;
   text-transform: uppercase;
   background-color: #fff;
@@ -31,8 +31,8 @@
   .new-year-decoration {
     max-width: 940px;
     max-height: 418px;
-    background-image: url("../img/new-year-decoration-medium.jpg");
     place-self: end center;
+    background-image: url("../img/new-year-decoration-medium.jpg");
   }
 
   .new-year-decoration__link {
@@ -50,8 +50,8 @@
 @media (max-width: 764px) {
   .new-year-decoration {
     height: 100%;
+    justify-self: unset;
     background-image: url("../img/new-year-decoration-small.jpg");
-   justify-self: unset;
   }
 
   .new-year-decoration__link {
@@ -66,11 +66,9 @@
   }
 }
 
-@media (max-width: 400px) {
+@media (max-width: 500px) {
   .new-year-decoration {
-    width: 100%;
     background-image: url("../img/new-year-decoration-mobile.jpg");
-
   }
 
   .new-year-decoration__link {
@@ -82,5 +80,11 @@
     padding: 9px 41px 8px;
     font-size: 12px;
     border-radius: 6px;
+  }
+}
+
+@media (max-width: 322px) {
+  .new-year-decoration__title {
+    padding: 9px 21px 8px;
   }
 }

@@ -8,7 +8,7 @@
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  padding: 77px 20px 27px 0;
+  padding: 77px 20px 27px 10px;
 }
 
 .discount-time__title {
@@ -21,41 +21,53 @@
   margin-left: auto;
 }
 
-@media (max-width: 1596px) {
+@media (max-width: 1794px) {
   .discount-time__link {
     padding-top: 40px;
+  }
+}
+
+@media (max-width:1300px) {
+  .discount-time  {
+    max-width: 245px;
+    height: 100%;
+    justify-self: end;
+  }
+
+   .discount-time__link {
+    padding-top: 20px;
+    padding-bottom: 10px;
   }
 }
 
 @media (max-width: 1028px) {
   .discount-time {
     max-width: 202px;
-    height: 100%; 
-    background-image: url("../img/discount-time-medium.jpg");
+    height: 100%;
     justify-self: end;
+    background-image: url("../img/discount-time-medium.jpg");
   }
 
   .discount-time__link {
-    padding: 54px 10px 10px 0;
+    padding: 54px 10px 10px 10px;
   }
 
   .discount-time__title {
     font-size: 24px;
   }
-  .discount-time__discount {
-   
+}
+
+@media (max-width: 867px) {
+  .discount-time__link {
+    padding-top: 30px;
   }
 }
 
 @media (max-width: 764px) {
   .discount-time {
-
-  max-width: 130px;
-  
-    height: 100%; 
+    max-width: 130px;
+    height: 100%;
     background-image: url("../img/discount-time-small.jpg");
- 
-    
   }
 
   .discount-time__link {
@@ -65,17 +77,12 @@
   .discount-time__title {
     font-size: 16px;
   }
-  .discount-time__discount {
-    
-  }
 }
 
-@media (max-width: 400px) {
+@media (max-width: 500px) {
   .discount-time {
-    
     width: 100%;
     background-image: url("../img/discount-time-mobile.jpg");
-   
   }
 
   .discount-time__link {
@@ -83,12 +90,7 @@
   }
 
   .discount-time__title {
-
     font-size: 12px;
     text-align: left;
-  }
-
-  .discount-time__discount {
-    
   }
 }

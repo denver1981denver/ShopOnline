@@ -32,6 +32,23 @@ header {
   }
 }
 
+@media (max-width: 1400px) {
+  .header {
+    padding-top: 34px;
+  }
+
+  .header__navigation {
+    grid-template-columns: repeat(12, 1fr);
+    grid-template-rows: 61px 54px;
+    grid-template-areas:
+      "logo logo logo  ...    ...   ...    ...    ...   navbar navbar navbar navbar"
+      "menu menu ... search search search search search search search search search";
+    row-gap: 34px;
+    column-gap: 0;
+  }
+}
+
+
 @media (max-width: 850px) {
   .header {
     padding-top: 25px;

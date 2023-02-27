@@ -7,8 +7,7 @@
 .household-chemicals__link {
   display: flex;
   flex-direction: column;
-  padding: 20px 0 0 20px;
-  /* justify-content: space-between; */
+  padding: 20px 5px 0 20px;
   gap: 22px;
 }
 
@@ -25,21 +24,27 @@
   .household-chemicals {
     max-width: 196px;
     height: 196px;
-    background-image: url("../img/household-chemicals-medium.jpg");
     justify-self: end;
+    background-image: url("../img/household-chemicals-medium.jpg");
   }
 
   .household-chemicals__link {
     gap: 53px;
-    padding: 10px 0 0 4px;
+    padding: 10px 4px 0 4px;
   }
-  
+
   .household-chemicals__title {
     font-size: 20px;
   }
 
   .household-chemicals__discount {
-   margin-left: 2px;
+    margin-left: 2px;
+  }
+}
+
+@media (max-width: 896px) {
+  .household-chemicals__link {
+    gap: 35px;
   }
 }
 
@@ -47,19 +52,18 @@
   .household-chemicals {
     width: 100%;
     max-height: 83px;
-    background-image: url("../img/household-chemicals-small.jpg");
+    margin-bottom: 16px;
     align-self: end;
     justify-self: end;
-    margin-bottom: 16px;
-    /* margin-right: 30px; */
-    transform: translate(-30px,0);
+    background-image: url("../img/household-chemicals-small.jpg");
+    transform: translate(-30px, 0);
   }
 
   .household-chemicals__link {
     gap: 5px;
     padding: 3px 0 0 3px;
   }
-  
+
   .household-chemicals__title {
     font-size: 12px;
     line-height: 1.2;
@@ -67,9 +71,7 @@
 
   .household-chemicals__discount {
     margin: 0;
-   }
-
-  
+  }
 }
 
 @media (max-width: 764px) and (min-width: 400px) {
@@ -86,28 +88,28 @@
     min-width: 78px;
     transform: translate(0, 0);
   }
-
 }
 
-@media (max-width: 400px) {
+@media (max-width: 500px) {
   .household-chemicals {
-    width: 100%;
+    max-width: 130px;
     max-height: 130px;
-  
-    background-image: url("../img/household-chemicals-mobile.jpg");
     margin: 0;
+    background-image: url("../img/household-chemicals-mobile.jpg");
   }
 
   .household-chemicals__link {
     gap: 51px;
-    padding: 5px 0 0 5px;
+    padding: 5px 5px 0 5px;
   }
 
   .household-chemicals__title {
-   padding-left: 4px;
+    padding-left: 4px;
   }
-  
-  
-
 }
 
+@media (max-width: 310px) {
+.household-chemicals__link {
+    gap: 41px;
+  }
+}

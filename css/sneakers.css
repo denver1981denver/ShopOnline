@@ -8,21 +8,20 @@
   padding-left: 20px;
 }
 
-@media (max-width:1460px) {
+@media (max-width: 1460px) {
   .sneakers {
- background-position: 40%;
-}
+    background-position: 40%;
+  }
 }
 
-@media (max-width:1028px) {
+@media (max-width: 1028px) {
   .sneakers {
-    /* width: 100%; */
-    height: 220px;
     max-width: 464px;
-    background-image: url("../img/sneakers-medium.jpg");
+    height: 220px;
     align-self: end;
+    background-image: url("../img/sneakers-medium.jpg");
   }
-  
+
   .sneakers__link {
     padding-top: 17px;
     padding-left: 10px;
@@ -31,29 +30,25 @@
 
 @media (max-width: 764px) {
   .sneakers {
-  
     height: 100%;
     background-image: url("../img/sneakers-small.jpg");
   }
-  
+
   .sneakers__link {
     padding-top: 10px;
     padding-left: 10px;
   }
 }
 
-@media (max-width: 400px) {
+@media (max-width: 500px) {
   .sneakers {
-    width: 100%;
+    max-width: 280px;
+    justify-self: center;
     background-image: url("../img/sneakers-mobile.jpg");
   }
-  
+
   .sneakers__link {
     padding-top: 5px;
     padding-left: 5px;
   }
 }
-
-
-
-

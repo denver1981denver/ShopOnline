@@ -10,7 +10,7 @@ html {
 }
 
 body {
-  min-width: 260px;
+  min-width: 280px;
   min-height: 100vh;
   font-family: Lato, sans-serif;
   font-weight: bold;
@@ -44,18 +44,13 @@ h1,
 h2,
 h3,
 p,
-figure,
 fieldset {
   margin: 0;
 }
 
-iframe {
-  border: none;
-}
-
 .visually-hidden {
   position: absolute !important;
-  clip: rect(1px 1px 1px 1px); 
+  clip: rect(1px 1px 1px 1px);
   clip: rect(1px, 1px, 1px, 1px);
   padding: 0 !important;
   border: 0 !important;
@@ -65,21 +60,25 @@ iframe {
 }
 
 .container {
-  border: 1px solid black;
   max-width: 1850px;
-  padding: 0 40px;
   margin: 0 auto;
+  padding: 0 40px;
 }
 
-@media (max-width: 850px) {
+@media (max-width: 1028px) {
   .container {
     padding: 0 30px;
   }
 }
 
-@media (max-width: 520px) {
+@media (max-width: 764px) {
   .container {
     padding: 0 20px;
   }
 }
 
+@media (max-width: 400px) {
+  .container {
+    padding: 0 15px;
+  }
+}

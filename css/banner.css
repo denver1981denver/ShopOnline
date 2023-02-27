@@ -55,7 +55,6 @@
   .banner {
     align-self: end;
     background-image: url("../img/banner-medium.jpg");
-    border-radius: 16px;
   }
 
   .banner__link {
@@ -126,9 +125,9 @@
   }
 }
 
-@media (max-width: 400px) {
+@media (max-width: 500px) {
   .banner {
-    max-height: 380px;
+    max-height: 380px; 
     background-image: url("../img/banner-mobile.jpg");
   }
 
@@ -138,8 +137,9 @@
 
   .banner__title {
     margin-bottom: 189px;
-    padding-left: 29px;
+    padding-left: 0;
     font-size: 22px;
+    text-align: center;
   }
 
   .banner__subtitle {

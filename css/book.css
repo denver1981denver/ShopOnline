@@ -5,7 +5,7 @@
 }
 
 .book__link {
-  padding: 90px 0 0 20px;
+  padding: 90px 10px 0 20px;
 }
 
 .book__title {
@@ -20,16 +20,26 @@
   line-height: 1.3;
 }
 
+@media (max-width:1300px) {
+  .book {
+    max-width: 245px;
+    height: 100%;
+  }
+
+  .book__link {
+    padding-top: 20px;
+  }
+}
+
 @media (max-width:1028px) {
   .book {
     max-width: 202px;
-    /* height: 202px; */
     height: 100%;
     background-image: url("../img/book-medium.jpg");
   }
 
   .book__link {
-    padding: 76px 0 0 9px;
+    padding: 76px 5px 0 9px;
   }
   
   .book__title {
@@ -44,9 +54,7 @@
 @media (max-width: 764px) {
   .book {
     max-width: 130px;
-  
     background-image: url("../img/book-small.jpg");
-    
   }
 
   .book__link {
@@ -64,7 +72,19 @@
   }
 }
 
-@media (max-width: 400px) {
+@media (max-width: 620px) {
+  .book__title {
+    font-size: 16px;
+    line-height: 1.1;
+  }
+  
+  .book__text {
+    font-size: 22px;
+    line-height: 1.1;
+  }
+}
+
+@media (max-width: 500px) {
   .book {
     width: 100%;
     background-image: url("../img/book-mobile.jpg");
@@ -80,5 +100,12 @@
   
   .book__text {
     font-size: 16px;
+  }
+}
+
+@media (max-width: 308px) {
+  .book__link {
+    padding-top: 66px;
+    padding-right: 35px;
   }
 }

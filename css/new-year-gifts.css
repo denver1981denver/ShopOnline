@@ -16,7 +16,6 @@
 
 @media (max-width: 1028px) {
   .new-year-gifts {
-  
     background-image: url("../img/new-year-gifts-medium.jpg");
   }
 
@@ -32,7 +31,7 @@
 
 @media (max-width: 764px) {
   .new-year-gifts {
-   width: 100%;
+    width: 100%;
     background-image: url("../img/new-year-gifts-small.jpg");
   }
 
@@ -46,9 +45,10 @@
   }
 }
 
-@media (max-width: 400px) {
+@media (max-width: 500px) {
   .new-year-gifts {
-    width: 100%;
+     max-width: 280px;
+    justify-self: center;
     background-image: url("../img/new-year-gifts-mobile.jpg");
   }
 
@@ -58,6 +58,5 @@
 
   .new-year-gifts__title {
     font-size: 12px;
-    
   }
 }
