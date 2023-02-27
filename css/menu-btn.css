@@ -22,13 +22,13 @@
   transform: translateY(-50%);
 }
 
-@media (max-width: 1400px) {
+@media (max-width: 1300px) {
   .menu-btn {
     grid-area: menu;
   }
 }
 
-@media (max-width: 850px) {
+@media (max-width: 764px) {
   .menu-btn {
     width: 115px;
     height: 100%;
@@ -42,7 +42,7 @@
   }
 }
 
-@media (max-width: 520px) {
+@media (max-width: 500px) {
   .menu-btn {
     padding: 7px 14px 7px 31px;
     width: 79px;

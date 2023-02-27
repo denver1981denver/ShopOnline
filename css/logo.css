@@ -8,14 +8,14 @@
   height: 41px;
 }
 
-@media (max-width: 1400px) {
+@media (max-width: 1300px) {
   .logo {
     align-self: end;
     grid-area: logo;
   }
 }
 
-@media (max-width: 850px) {
+@media (max-width: 764px) {
   .logo {
     width: 165px;
     height: 35px;
@@ -27,7 +27,7 @@
   }
 }
 
-@media (max-width: 520px) {
+@media (max-width: 500px) {
   .logo {
     width: 114px;
     height: 25px;

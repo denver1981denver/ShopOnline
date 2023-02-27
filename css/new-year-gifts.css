@@ -47,7 +47,7 @@
 
 @media (max-width: 500px) {
   .new-year-gifts {
-     max-width: 280px;
+    max-width: 280px;
     justify-self: center;
     background-image: url("../img/new-year-gifts-mobile.jpg");
   }

@@ -35,7 +35,13 @@
   border-radius: 50%;
 }
 
-@media (max-width: 1400px) {
+@media (max-width: 1600px) {
+  .navbar {
+    gap: 30px;
+  }
+}
+
+@media (max-width: 1300px) {
   .navbar {
     max-width: 294px;
     gap: 40px;
@@ -44,7 +50,7 @@
   }
 }
 
-@media (max-width: 850px) {
+@media (max-width: 764px) {
   .navbar {
     max-width: 294px;
     gap: 30px;
@@ -70,7 +76,7 @@
   }
 }
 
-@media (max-width: 520px) {
+@media (max-width: 500px) {
   .navbar {
     width: 130px;
     height: 100%;

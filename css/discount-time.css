@@ -27,14 +27,14 @@
   }
 }
 
-@media (max-width:1300px) {
-  .discount-time  {
+@media (max-width: 1300px) {
+  .discount-time {
     max-width: 245px;
     height: 100%;
     justify-self: end;
   }
 
-   .discount-time__link {
+  .discount-time__link {
     padding-top: 20px;
     padding-bottom: 10px;
   }

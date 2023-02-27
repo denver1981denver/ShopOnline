@@ -53,7 +53,7 @@
 
 @media (max-width: 500px) {
   .beneficial-december {
-     max-width: 280px;
+    max-width: 280px;
     justify-self: center;
     background-image: url("../img/beneficial-december-mobile.jpg");
   }
