@@ -1,0 +1,169 @@
+.hero {
+	grid-area: banner;
+	background-image: url("../img/banner.jpg");
+}
+
+.hero__link {
+	display: flex;
+	flex-direction: column;
+	padding-top: 145px;
+}
+
+.hero__title {
+	margin-bottom: 100px;
+	padding-left: 112px;
+	font-size: 70px;
+	line-height: 1.3;
+}
+
+.timer {
+	margin: 0 auto;
+}
+
+.timer__title {
+	text-align: center;
+	font-size: 16px;
+	line-height: 1.3;
+}
+
+.timer__wrapper {
+	display: flex;
+	gap: 30px;
+}
+
+.timer__item {
+	display: flex;
+	align-items: center;
+	gap: 6px;
+}
+
+.timer__count {
+	font-size: 60px;
+	line-height: 1.3;
+}
+
+.timer__units {
+	padding-top: 20px;
+	font-size: 32px;
+	line-height: 1.3;
+}
+
+@media (max-width: 1596px) {
+	.hero {
+		background-position: 60%;
+	}
+}
+
+@media (max-width: 1028px) {
+	.hero {
+		align-self: end;
+		background-image: url("../img/banner-medium.jpg");
+	}
+
+	.hero__link {
+		padding-top: 80px;
+	}
+
+	.hero__title {
+		margin-bottom: 63px;
+		padding-left: 80px;
+		font-size: 40px;
+	}
+
+	.timer__title {
+		margin-bottom: 10px;
+	}
+
+	.timer__wrapper {
+		gap: 20px;
+	}
+
+	.timer__item {
+		gap: 5px;
+	}
+
+	.timer__count {
+		font-size: 40px;
+	}
+
+	.timer__units {
+		font-size: 20px;
+	}
+}
+
+@media (max-width: 764px) {
+	.hero {
+		max-height: 280px;
+		align-self: start;
+		background-image: url("../img/banner-small.jpg");
+	}
+
+	.hero__link {
+		padding-top: 64px;
+	}
+
+	.hero__title {
+		margin-bottom: 82px;
+		font-size: 30px;
+	}
+
+	.timer {
+		gap: 10px;
+	}
+
+	.timer__title {
+		font-size: 12px;
+	}
+
+	.timer__item {
+		gap: 3px;
+	}
+
+	.timer__count {
+		font-size: 30px;
+	}
+
+	.timer__units {
+		font-size: 16px;
+	}
+}
+
+@media (max-width: 500px) {
+	.hero {
+		max-height: 380px;
+		background-image: url("../img/banner-mobile.jpg");
+	}
+
+	.hero__link {
+		padding-top: 50px;
+	}
+
+	.hero__title {
+		margin-bottom: 189px;
+		padding-left: 0;
+		font-size: 22px;
+		text-align: center;
+	}
+
+	.timer {
+		gap: 8px;
+	}
+
+	.timer__title {
+		margin-bottom: 6px;
+		font-size: 8px;
+	}
+
+	.timer__item {
+		gap: 2px;
+	}
+
+	.timer__count {
+		font-size: 20px;
+	}
+
+	.timer__units {
+		padding-top: 3px;
+		font-size: 12px;
+	}
+}

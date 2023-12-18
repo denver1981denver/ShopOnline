@@ -11,6 +11,9 @@
   <link rel="preload" href="fonts/lato-heavy.woff2" as="font" type="font/woff2" crossorigin>
 
   <link rel="stylesheet" href="css/style.css">
+
+  <script type="module" src="js/script.js"></script>
+ 
 </head>
 
 <body>
@@ -63,55 +66,39 @@
   <main>
     <section class="ad-block">
       <h2 class="visually-hidden">Рекламный блок</h2>
+
       <div class="container">
         <ul class="card">
-          <li class="card__item banner">
-            <a class="card__link banner__link" href="#"> 
-              <h3 class="banner__title">-50% на все ноутбуки</h3>
-  
-              <p class="banner__subtitle">До конца акции:</p>
-  
-              <ul class="banner__timer timer">
-                <li class="timer__item">
-                  <p class="timer__unit">3</p>
-                  <p class="timer__unit-description">дня</p>
-                </li>
-  
-                <li class="timer__item">
-                  <p class="timer__unit">8</p>
-                  <p class="timer__unit-description">часов</p>
-                </li>
-  
-                <li class="timer__item">
-                  <p class="timer__unit">43</p>
-                  <p class="timer__unit-description">минуты</p>
-                </li>
-              </ul>
+          <li class="card__item hero">
+            <a class="card__link hero__link" href="#"> 
+              <h3 class="hero__title">-50% на все ноутбуки</h3>
+
+              <div class="hero__timer timer" data-timer-deadline="2024/01/01 00:00"></div> 
             </a>  
         </li>
           
           <li class="card__item book">
             <a class="card__link book__link" href="#"> 
-                <h3 class="book__title"><span class="book__text">Книга – </span>лучший подарок</h3>
+              <h3 class="book__title"><span class="book__text">Книга – </span>лучший подарок</h3>
             </a>  
           </li>
   
           <li class="card__item discount-time">
             <a class="card__link discount-time__link" href="#">
-              <h3 class="discount-time__title"> Время скидок!</h3>
+              <h3 class="discount-time__title">Время скидок!</h3>
               <p class="discount-time__discount card__discount">-25%</p>
             </a> 
           </li> 
   
           <li class="card__item second-pair">
             <a class="card__link second-pair__link" href="#">
-                <h3 class="second-pair__title"> Вторая пара кроссовок <span class="second-pair__text">в подарок!</span></h3>
+              <h3 class="second-pair__title">Вторая пара кроссовок <span class="second-pair__text">в подарок!</span></h3>
             </a> 
           </li>
   
           <li class="card__item new-year-gifts">
             <a class="card__link new-year-gifts__link" href="#">
-              <h3 class="new-year-gifts__title"> Идеи новогодних подарков</h3>
+              <h3 class="new-year-gifts__title">Идеи новогодних подарков</h3>
             </a> 
           </li>
   
