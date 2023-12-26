@@ -1,4 +1,11 @@
 const taimer = (timerBlock, deadline) => {
+  // массивы со склоняемыми словами
+  const wordsDays = ['день', 'дня', 'дней'];
+  const wordsHours = ['час', 'часа', 'часов'];
+  const wordsMinutes = ['минута', 'минуты', 'минут'];
+  const wordsSeconds = ['секунда', 'секунды', 'секунд'];
+
+
   // создание вёрстки
   timerBlock.insertAdjacentHTML('beforeend', `
 <p class="timer__title">До конца акции:</p>
@@ -42,65 +49,15 @@ const taimer = (timerBlock, deadline) => {
   timerItemSeconds.style.display = 'none';
 
   timerWrapper.append(timerItemDays, timerItemHours, timerItemMinutes, timerItemSeconds);
-// функция проверки на склонение
-  const getWordDeclination = () => {
-    const dataSec = timerSec.textContent[timerSec.textContent.length - 1];
-    const dataMin = timerMin.textContent[timerMin.textContent.length - 1];
-    const dataHour = timerHour.textContent[timerHour.textContent.length - 1];
-    const dataDay = timerDay.textContent[timerDay.textContent.length - 1];
+  // функция проверки на склонение
 
-    if (dataDay === '1') {
-      unitDay.textContent = 'день';
-    }
-
-    if (dataDay > 1 && dataDay < 5) {
-      unitDay.textContent = 'дня';
-    }
-
-    if (dataDay > 1 || dataDay === '0' || timerDay.textContent === '11') {
-      unitDay.textContent = 'дней';
-    }
-
-    if (dataDay === '0') {
-      timerItemDays.style.display = 'none';
-      timerItemSeconds.style.display = 'block';
-    }
-
-    if (dataHour === '1') {
-      unitHour.textContent = 'час';
-    }
-
-    if (dataHour > 1 || dataHour === '0' || timerHour.textContent === '11') {
-      unitHour.textContent = 'часов';
-    }
-
-    if (dataHour > 1 && dataHour < 5) {
-      unitHour.textContent = 'часа';
-    }
-
-    if (dataMin === '1') {
-      unitMin.textContent = 'минута';
-    }
-
-    if (dataMin > 1 || dataMin === '0' || timerMin.textContent === '11') {
-      unitMin.textContent = 'минут';
-    }
-
-    if (dataMin > 1 && dataMin < 5) {
-      unitMin.textContent = 'минуты';
-    }
-
-    if (dataSec === '1') {
-      unitSec.textContent = 'секунда';
-    }
-
-    if (dataSec > 1 || dataSec === '0' || timerSec.textContent === '11') {
-      unitSec.textContent = 'секунд';
-    }
-
-    if (dataSec > 1 && dataSec < 5) {
-      unitSec.textContent = 'секунды';
-    }
+  const numWord = (value, words) => {
+    value %= 100;
+    const num = value % 10;
+    if (value > 10 && value < 20) return words[2];
+    if (num > 1 && num < 5) return words[1];
+    if (num === 1) return words[0];
+    return words[2];
   };
 
   const getTimeRemaining = () => {
@@ -119,10 +76,10 @@ const taimer = (timerBlock, deadline) => {
   const start = () => {
     const timer = getTimeRemaining();
 
-    timerSec.textContent = timer.seconds;
-    timerDay.textContent = timer.days;
+    unitDay.textContent = timerDay.textContent = timer.days;
     timerHour.textContent = timer.hours;
     timerMin.textContent = timer.minutes;
+    timerSec.textContent = timer.seconds;
 
     if (timer.minutes < 10) {
       timerMin.textContent = `0${timer.minutes}`;
@@ -139,9 +96,11 @@ const taimer = (timerBlock, deadline) => {
       timerBlock.style.display = 'none';
     }
 
-    getWordDeclination();
+    unitDay.textContent = numWord(timer.days, wordsDays);
+    unitHour.textContent = numWord(timer.hours, wordsHours);
+    unitMin.textContent = numWord(timer.minutes, wordsMinutes);
+    unitSec.textContent = numWord(timer.seconds, wordsSeconds);
   };
-
   start();
 };
 
