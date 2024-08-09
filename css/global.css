@@ -35,6 +35,10 @@ a {
   color: inherit;
 }
 
+s {
+  text-decoration: none;
+}
+
 ul {
   list-style: none;
   padding: 0;
@@ -49,6 +53,11 @@ fieldset {
   margin: 0;
 }
 
+cite, 
+address {
+  font-style: normal;
+}
+
 .visually-hidden {
   position: absolute !important;
   clip: rect(1px 1px 1px 1px);
@@ -60,14 +69,14 @@ fieldset {
   overflow: hidden;
 }
 
-cite {
-  font-style: normal;
-}
-
 .container {
   max-width: 1850px;
   margin: 0 auto;
   padding: 0 40px;
+}
+
+main {
+  padding-bottom: 90px;
 }
 
 @media (max-width: 1028px) {

@@ -12,17 +12,6 @@
     "ny-decor ny-decor ny-decor ny-decor dresses  christmas-decor";
 }
 
-.card__discount {
-  max-width: 88px;
-  max-height: 88px;
-  padding: 24px 8px 25px 9px;
-  font-size: 30px; 
-  line-height: 1.3;
-  background: #ffbd13;
-  color: #fff;
-  border-radius: 50%;
-}
-
 .card__item {
   width: 100%;
   height: 100%;
@@ -95,7 +84,7 @@
     border-radius: 12px;
   }
 
-  .card__discount {
+  .sale {
     max-width: 50px;
     max-height: 50px;
     padding: 14px 6px 15px 6px;
@@ -125,7 +114,7 @@
     border-radius: 8px;
   }
 
-  .card__discount {
+  .sale {
     max-width: 50px;
     max-height: 50px;
     padding: 14px 6px 15px 6px;

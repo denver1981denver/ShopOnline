@@ -1,24 +1,24 @@
-.ad-block {
+.promo {
   padding-top: 90px;
-  padding-bottom: 140px;
+  padding-bottom: 50px;
 }
 
 @media (max-width: 1028px) {
-  .ad-block {
+  .promo {
     padding-top: 60px;
     padding-bottom: 100px;
   }
 }
 
 @media (max-width: 764px) {
-  .ad-block {
+  .promo {
     padding-top: 50px;
     padding-bottom: 80px;
   }
 }
 
 @media (max-width: 500px) {
-  .ad-block {
+  .promo {
     padding-top: 41px;
     padding-bottom: 70px;
   }

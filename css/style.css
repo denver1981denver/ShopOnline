@@ -1,17 +1,18 @@
 @import url(normalize.css);
 @import url(fonts.css);
-@import url(var.css);
+/* @import url(var.css); */
 @import url(global.css);
 @import url(header.css);
 @import url(logo.css);
 @import url(menu-btn.css);
 @import url(form.css);
 @import url(navbar.css);
-@import url(ad-block.css);
+@import url(promo.css);
 @import url(card.css);
+@import url(discount-time.css);
 @import url(hero.css);
 @import url(book.css);
-@import url(discount-time.css);
+@import url(sale.css);
 @import url(second-pair.css);
 @import url(new-year-gifts.css);
 @import url(sneakers.css);
@@ -22,3 +23,6 @@
 @import url(christmas-decorations.css); 
 @import url(blog.css); 
 @import url(article.css); 
+@import url(cards-product.css); 
+@import url(footer.css); 
+@import url(contacts.css); 

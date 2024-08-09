@@ -5,11 +5,10 @@ const taimer = (timerBlock, deadline) => {
   const wordsMinutes = ['минута', 'минуты', 'минут'];
   const wordsSeconds = ['секунда', 'секунды', 'секунд'];
 
-
   // создание вёрстки
   timerBlock.insertAdjacentHTML('beforeend', `
-<p class="timer__title">До конца акции:</p>
-`);
+    <p class="timer__title">До конца акции:</p>
+  `);
 
   const timerWrapper = document.createElement('div');
   timerWrapper.classList.add('timer__wrapper');
@@ -17,7 +16,7 @@ const taimer = (timerBlock, deadline) => {
 
   const timerItemDays = document.createElement('p');
   timerItemDays.classList.add('timer__item', 'timer__item--days');
-  const timerDay = document.createElement('span');
+  const timerDay = document.createElement('time');
   timerDay.classList.add('timer__count', 'timer__count--days');
   const unitDay = document.createElement('span');
   unitDay.classList.add('timer__units', 'timer__units--days');
@@ -25,7 +24,7 @@ const taimer = (timerBlock, deadline) => {
 
   const timerItemHours = document.createElement('p');
   timerItemHours.classList.add('timer__item', 'timer__item--hours');
-  const timerHour = document.createElement('span');
+  const timerHour = document.createElement('time');
   timerHour.classList.add('timer__count', 'timer__count--hours');
   const unitHour = document.createElement('span');
   unitHour.classList.add('timer__units', 'timer__units--hours');
@@ -33,7 +32,7 @@ const taimer = (timerBlock, deadline) => {
 
   const timerItemMinutes = document.createElement('p');
   timerItemMinutes.classList.add('timer__item', 'timer__item--minutes');
-  const timerMin = document.createElement('span');
+  const timerMin = document.createElement('time');
   timerMin.classList.add('timer__count', 'timer__count--minutes');
   const unitMin = document.createElement('span');
   unitMin.classList.add('timer__units', 'timer__units--minutes');
@@ -41,7 +40,7 @@ const taimer = (timerBlock, deadline) => {
 
   const timerItemSeconds = document.createElement('p');
   timerItemSeconds.classList.add('timer__item', 'timer__item--seconds');
-  const timerSec = document.createElement('span');
+  const timerSec = document.createElement('time');
   timerSec.classList.add('timer__count', 'timer__count--seconds');
   const unitSec = document.createElement('span');
   unitSec.classList.add('timer__units', 'timer__units--seconds');
@@ -77,9 +76,13 @@ const taimer = (timerBlock, deadline) => {
     const timer = getTimeRemaining();
 
     unitDay.textContent = timerDay.textContent = timer.days;
+    timerDay.setAttribute('datetime', `${timer.days}d`);
     timerHour.textContent = timer.hours;
+    timerHour.setAttribute('datetime', `${timer.hours}h`);
     timerMin.textContent = timer.minutes;
+    timerMin.setAttribute('datetime', `${timer.minutes}m`);
     timerSec.textContent = timer.seconds;
+    timerSec.setAttribute('datetime', `${timer.seconds}s`);
 
     if (timer.minutes < 10) {
       timerMin.textContent = `0${timer.minutes}`;
