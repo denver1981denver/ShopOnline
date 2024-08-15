@@ -1,8 +1,10 @@
-.article__container {
-	max-width: 1920px;
-	padding: 0 75px;
+.article-container {
+	padding-top: 60px;
+	padding-bottom: 60px;
+}
+
+.article {
 	padding-top: 80px;
-	margin: 0 auto;
 }
 
 .article__title {
@@ -13,24 +15,18 @@
 	color: #2d2d2d;
 }
 
-.article__content {
-	display: flex;
-	flex-direction: column;
-	gap: 18px;
-	margin-bottom: 160px;
-}
-
 .article__text {
+	margin-bottom: 150px;
 	font-weight: 400;
 	font-size: 22px;
 	line-height: 1.5;
 	color: #2d2d2d;
 }
 
-.article__wrapper {
+.article__footer {
 	display: flex;
 	justify-content: space-between;
-	align-items: center;
+	align-items: flex-end;
 }
 
 .article__link {

@@ -1,10 +1,8 @@
-const articleContainer = document.querySelector('.article');
-const blogContainer = document.querySelector('.blog__container');
+const blogContainer = document.querySelector('.blog__wrapper-articles');
 
 const loadGoods = async () => {
   const result = await fetch('https://gorest.co.in/public-api/posts');
   const data = await result.json();
-
   return data.data;
 };
 
@@ -23,7 +21,9 @@ const renderGoods = async () => {
 
 const goods = data.map((item, i) => {
   const card = document.createElement('li');
-  card.className = 'blog__card';
+  card.tabIndex = '0';
+  const article = document.createElement('article');
+  article.className = 'blog__card';
   const img = document.createElement('div');
   img.className = 'blog__card-image';
   img.style.backgroundImage = `url("https://loremflickr.com/400/400?${++i}")`;
@@ -37,7 +37,8 @@ const goods = data.map((item, i) => {
   link.addEventListener('click', handleCardClick);
   
   link.append(title);
-  card.append(img, link)
+  article.append(img, link);
+  card.append(article);
 
   return card;; 
   });
