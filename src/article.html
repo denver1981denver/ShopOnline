@@ -4,21 +4,21 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Блог со статьями</title>
+  <title>Статья</title>
 
   <link rel="preload" href="fonts/lato-bold.woff2" as="font" type="font/woff2" crossorigin>
   <link rel="preload" href="fonts/lato-regular.woff2" as="font" type="font/woff2" crossorigin>
- 
-  <link href="css/style.css" rel="stylesheet">
 
-  <script src="js/blog.js" defer></script>
+  <link href="css/index.css" rel="stylesheet">
+
+  <script src="js/article.js" defer></script>
 </head>
 
 <body>
   <header class="header">
     <div class="container">
       <nav class="header__navigation">
-        <a class="logo logo--header" href="index.html">
+        <a class="logo logo--header" href="/">
           <img class="logo__img" src="img/logo.svg" height="41" alt="Логотип интернет магазина ShopOnline">
         </a>
 
@@ -58,43 +58,21 @@
       </nav>
     </div>
   </header> 
-  
-  <main class="blog">
-    <div class="container blog__container">
-      <h1 tabindex="0" class="visually-hidden">Блог с разными статьями</h1>
-
+  <main>
+    <div class="container article-container">
       <ul class="navigation-page">
         <li class="navigation-page__list">
           <a class="navigation-page__link navigation-page__link--arrow" href="/">Главная</a>
         </li>
         <li class="navigation-page__list">
-          <a tabindex="0" class="navigation-page__link" aria-current="page">Блог</a>
+          <a class="navigation-page__link navigation-page__link--arrow" href="blog.html">Блог</a>
+        </li>
+        <li class="navigation-page__list">
+          <a class="navigation-page__link navigation-page__link--title" aria-current="page" tabindex="0"></a>
         </li>
       </ul>
 
-      <div class="blog__wrapper-articles">
-      </div>
-    
-      <div class="blog__pagination pagination">
-        <a class="pagination__page" aria-label="отобразить предыдущие страницы" tabindex="0">
-          <svg width="37" height="37" viewBox="0 0 37 37" fill="none" xmlns="http://www.w3.org/2000/svg">
-            <path d="M32.375 16.9583H10.5296L16.0487 11.4237L13.875 9.25L4.625 18.5L13.875 27.75L16.0487 25.5763L10.5296 20.0417H32.375V16.9583Z" fill="#8F8F8F"/>
-          </svg>
-            
-        </a>
-        <ul class="pagination__list">
-          <li class="pagination__item">
-            <a class="pagination__link active" href="#" aria-label="страница 1" aria-current="page">1</a>
-            <a class="pagination__link" href="#" aria-label="перейти на страницу 2">2</a>
-            <a class="pagination__link" href="#" aria-label="перейти на страницу 3">3</a>
-          </li>
-        </ul>
-        <a class="pagination__page" aria-label="отобразить следующие страницы" tabindex="0">
-          <svg width="37" height="37" viewBox="0 0 37 37" fill="none" xmlns="http://www.w3.org/2000/svg">
-            <path d="M4.625 16.9583H26.4704L20.9513 11.4237L23.125 9.25L32.375 18.5L23.125 27.75L20.9513 25.5763L26.4704 20.0417H4.625V16.9583Z" fill="#3670C7"/>
-          </svg> 
-        </a>
-      </div>
+      <article class="article"></article>
     </div>
   </main>
 
@@ -155,7 +133,7 @@
             <a class="footer__link" href="#">Условия возврата заказа</a>
           </li>
           <li class="footer__item">
-            <a class="footer__link" tabindex="0" aria-current="page">Блог</a>
+            <a class="footer__link" href="blog.html">Блог</a>
           </li>
         </ul>
       </div>
@@ -220,3 +198,11 @@
   </footer>
 </body>
 </html>
+
+
+
+
+
+
+
+

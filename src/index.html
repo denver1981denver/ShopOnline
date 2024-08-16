@@ -4,21 +4,22 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Статья</title>
+  <title>Интернет магазин ShopOnline, широчайший выбор товаров</title>
 
   <link rel="preload" href="fonts/lato-bold.woff2" as="font" type="font/woff2" crossorigin>
   <link rel="preload" href="fonts/lato-regular.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="fonts/lato-heavy.woff2" as="font" type="font/woff2" crossorigin>
 
-  <link href="css/style.css" rel="stylesheet">
+  <link rel="stylesheet" href="css/index.css">
 
-  <script src="js/article.js" defer></script>
+  <script type="module" src="js/script.js"></script>
 </head>
 
 <body>
   <header class="header">
     <div class="container">
       <nav class="header__navigation">
-        <a class="logo logo--header" href="/">
+        <a class="logo logo--header">
           <img class="logo__img" src="img/logo.svg" height="41" alt="Логотип интернет магазина ShopOnline">
         </a>
 
@@ -58,23 +59,270 @@
       </nav>
     </div>
   </header> 
+  
   <main>
-    <div class="container article-container">
-      <ul class="navigation-page">
-        <li class="navigation-page__list">
-          <a class="navigation-page__link navigation-page__link--arrow" href="/">Главная</a>
-        </li>
-        <li class="navigation-page__list">
-          <a class="navigation-page__link navigation-page__link--arrow" href="blog.html">Блог</a>
-        </li>
-        <li class="navigation-page__list">
-          <a class="navigation-page__link navigation-page__link--title" aria-current="page" tabindex="0"></a>
-        </li>
-      </ul>
+    <h1 class="visually-hidden" tabindex="0">Интернет магазин Shop Online</h1>
 
-      <article class="article"></article>
-    </div>
-  </main>
+    <section class="promo">
+      <h2 class="visually-hidden" tabindex="0">Рекламный блок</h2>
+
+      <div class="container">
+        <ul class="card">
+          <li class="card__item hero">
+            <a class="card__link hero__link" href="#"> 
+              <h3 class="hero__title">-50% на все ноутбуки</h3>
+
+              <div class="hero__timer timer" data-timer-deadline="2024/08/25 00:00 GMT+0300"></div> 
+            </a>  
+          </li>
+          
+          <li class="card__item book">
+            <a class="card__link book__link" href="#"> 
+              <h3 class="book__title"><span class="book__text">Книга – </span>лучший подарок</h3>
+            </a>  
+          </li>
+  
+          <li class="card__item discount-time">
+            <a class="card__link discount-time__link" href="#">
+              <h3 class="discount-time__title">Время скидок!</h3>
+              <p class="discount-time__discount sale">-25%</p>
+            </a> 
+          </li> 
+  
+          <li class="card__item second-pair">
+            <a class="card__link second-pair__link" href="#">
+              <h3 class="second-pair__title">Вторая пара кроссовок <span class="second-pair__text">в подарок!</span></h3>
+            </a> 
+          </li>
+  
+          <li class="card__item new-year-gifts">
+            <a class="card__link new-year-gifts__link" href="#">
+              <h3 class="new-year-gifts__title">Идеи новогодних подарков</h3>
+            </a> 
+          </li>
+  
+          <li class="card__item sneakers">
+            <a class="card__link sneakers__link" href="#">
+              <h3 class="visually-hidden">Кроссовки</h3>
+              <p class="sneakers__discount sale">-40%</p>
+            </a>  
+          </li>
+  
+          <li class="card__item beneficial-december">
+            <a class="card__link beneficial-december__link" href="#"> 
+              <h3 class="beneficial-december__title">Выгодно в декабре!</h3>
+              <p class="beneficial-december__discount sale">-15%</p>
+            </a>  
+          </li>
+  
+          <li class="card__item new-year-decoration">
+            <a class="card__link new-year-decoration__link" href="#"> 
+              <h3 class="new-year-decoration__title">Новогодние украшения</h3>
+            </a>  
+          </li>
+  
+          <li class="card__item dresses">
+            <a class="card__link dresses__link" href="#"> 
+              <h3 class="visually-hidden">Платья</h3>
+              <p class="dresses__discount sale">-55%</p>
+            </a>  
+          </li>
+  
+          <li class="card__item household-chemicals">
+            <a class="card__link household-chemicals__link" href="#"> 
+              <h3 class="household-chemicals__title">На бытовую химию</h3>
+              <p class="household-chemicals__discount sale">-25%</p>
+            </a>  
+          </li>
+  
+          <li class="card__item christmas-decorations">
+            <a class="card__link christmas-decorations__link" href="#"> 
+              <h3 class="visually-hidden">Ёлочные игрушки</h3>
+            </a>  
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <section class="cards-product">
+      <div class="container">
+        <h2 class="cards-product__title" tabindex="0">Это выгодно!</h2>
+
+        <ul class="cards-product__wrapper">
+          <li class="cards-product__item">
+            <article class="card-product">
+              <div class="card-product__wrapper">
+                <div class="card-product__img-wrapper">
+                  <a class="card-product__link" href="#" tabindex="0" 
+                    aria-label="Пара футболок 1299 рублей скидка 50%" draggable="false"></a>
+                  <img class="card-product__img" src="img/product-1.jpg" alt="Пара футболок" 
+                    loading="lazy" width="420" height="295">
+                  <span class="card-product__sale sale">-50%</span>
+                </div>
+                <p class="card-product__price">
+                  <span class="card-product__new-price">1299 &#8381;</span>
+                  <span class="card-product__old-price">
+                    <s class="card-product__cost">2598 </s>
+                    <s class="card-product__currency">&#8381;</s>
+                  </span>
+                </p>
+                <h3 class="card-product__title">Пара футболок</h3>
+              </div>
+            </article>
+          </li>
+
+          <li class="cards-product__item">
+            <article class="card-product">
+              <div class="card-product__wrapper">
+                <div class="card-product__img-wrapper">
+                  <a class="card-product__link" href="#" tabindex="0" 
+                    aria-label="Кроссовки 2099 рублей скидка 40%" draggable="false"></a>
+                  <img class="card-product__img" src="img/product-2.jpg" alt="Кроссовки" 
+                    loading="lazy" width="420" height="295">
+                  <span class="card-product__sale sale">-40%</span>
+                </div>
+                <p class="card-product__price">
+                  <span class="card-product__new-price">2099 &#8381;</span>
+                  <span class="card-product__old-price">
+                    <s class="card-product__cost">5938</s>
+                    <s class="card-product__currency">&#8381;</s>
+                  </span>
+                </p>
+                <h3 class="card-product__title">Кроссовки</h3>
+              </div>
+            </article>
+          </li>
+          <li class="cards-product__item">
+            <article class="card-product">
+              <div class="card-product__wrapper">
+                <div class="card-product__img-wrapper">
+                  <a class="card-product__link" href="#" tabindex="0" 
+                    aria-label="Постельное белье 3902 рублей скидка 10%" draggable="false"></a>
+                  <img class="card-product__img" src="img/product-3.jpg" alt="Постельное белье" 
+                    loading="lazy" width="420" height="295">
+                  <span class="card-product__sale sale">-10%</span>
+                </div>
+                <p class="card-product__price">
+                  <span class="card-product__new-price">3902 &#8381;</span>
+                  <span class="card-product__old-price">
+                    <s class="card-product__cost">4490 </s>
+                    <s class="card-product__currency">&#8381;</s>
+                  </span>
+                </p>
+                <h3 class="card-product__title">Постельное белье</h3>
+              </div>
+            </article>
+          </li>
+          <li class="cards-product__item">
+            <article class="card-product">
+              <div class="card-product__wrapper">
+                <div class="card-product__img-wrapper">
+                  <a class="card-product__link" href="#" tabindex="0" 
+                    aria-label="Фен 2999 рублей скидка 30%" draggable="false"></a>
+                  <img class="card-product__img" src="img/product-4.jpg" alt="Фен" 
+                    loading="lazy" width="420" height="295">
+                  <span class="card-product__sale sale">-30%</span>
+                </div>
+                <p class="card-product__price">
+                  <span class="card-product__new-price">2999 &#8381;</span>
+                  <span class="card-product__old-price">
+                    <s class="card-product__cost">4490</s>
+                    <s class="card-product__currency">&#8381;</s>
+                  </span>
+                </p>
+                <h3 class="card-product__title">Фен </h3>
+              </div>
+            </article>
+          </li>
+          <li class="cards-product__item">
+            <article class="card-product">
+              <div class="card-product__wrapper">
+                <div class="card-product__img-wrapper">
+                  <a class="card-product__link" href="#" tabindex="0" 
+                    aria-label="Постельное белье 3902 рублей скидка 10%" draggable="false"></a>
+                  <img class="card-product__img" src="img/product-3.jpg" alt="Постельное белье" 
+                    loading="lazy" width="420" height="295">
+                  <span class="card-product__sale sale">-10%</span>
+                </div>
+                <p class="card-product__price">
+                  <span class="card-product__new-price">3902 &#8381;</span>
+                  <span class="card-product__old-price">
+                    <s class="card-product__cost">4490 </s>
+                    <s class="card-product__currency">&#8381;</s>
+                  </span>
+                </p>
+                <h3 class="card-product__title">Постельное белье</h3>
+              </div>
+            </article>
+          </li>
+          <li class="cards-product__item">
+            <article class="card-product">
+              <div class="card-product__wrapper">
+                <div class="card-product__img-wrapper">
+                  <a class="card-product__link" href="#" tabindex="0" 
+                    aria-label="Фен 2999 рублей скидка 30%" draggable="false"></a>
+                  <img class="card-product__img" src="img/product-4.jpg" alt="Фен" 
+                    loading="lazy" width="420" height="295">
+                  <span class="card-product__sale sale">-30%</span>
+                </div>
+                <p class="card-product__price">
+                  <span class="card-product__new-price">2999 &#8381;</span>
+                  <span class="card-product__old-price">
+                    <s class="card-product__cost">4490</s>
+                    <s class="card-product__currency">&#8381;</s>
+                  </span>
+                </p>
+                <h3 class="card-product__title">Фен </h3>
+              </div>
+            </article>
+          </li>
+          <li class="cards-product__item">
+            <article class="card-product">
+              <div class="card-product__wrapper">
+                <div class="card-product__img-wrapper">
+                  <a class="card-product__link" href="#" tabindex="0" 
+                    aria-label="Варежки-мишки 540 рублей скидка 30%" draggable="false"></a>
+                  <img class="card-product__img" src="img/product-5.jpg" alt="Варежки-мишки" 
+                    loading="lazy" width="420" height="295">
+                  <span class="card-product__sale sale">-30%</span>
+                </div>
+                <p class="card-product__price">
+                  <span class="card-product__new-price">540 &#8381;</span>
+                  <span class="card-product__old-price">
+                    <s class="card-product__cost">890</s>
+                    <s class="card-product__currency">&#8381;</s>
+                  </span>
+                </p>
+                <h3 class="card-product__title">Варежки-мишки</h3>
+              </div>
+            </article>
+          </li>
+          <li class="cards-product__item">
+            <article class="card-product">
+              <div class="card-product__wrapper">
+                <div class="card-product__img-wrapper">
+                  <a class="card-product__link" href="#" tabindex="0" 
+                    aria-label="Пара футболок 1299рублей скидка 50%" draggable="false"></a>
+                  <img class="card-product__img" src="img/product-1.jpg" alt="Пара футболок" 
+                    loading="lazy" width="420" height="295">
+                  <span class="card-product__sale sale">-50%</span>
+                </div>
+                <p class="card-product__price">
+                  <span class="card-product__new-price">1299 &#8381;</span>
+                  <span class="card-product__old-price">
+                    <s class="card-product__cost">2598 </s>
+                    <s class="card-product__currency">&#8381;</s>
+                  </span>
+                </p>
+                <h3 class="card-product__title">Пара футболок</h3>
+              </div>
+            </article>
+          </li>
+
+        </ul>
+      </div>
+    </section>
+  </main> 
 
   <footer class="footer">
     <div class="container footer__container">
@@ -198,11 +446,3 @@
   </footer>
 </body>
 </html>
-
-
-
-
-
-
-
-
